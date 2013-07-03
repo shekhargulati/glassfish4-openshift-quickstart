@@ -250,7 +250,7 @@
           <network-listener address="OPENSHIFT_DIY_IP" port="8080" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
           <!--<network-listener port="8181" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool"></network-listener>
           -->
-          <network-listener address="OPENSHIFT_DIY_IP"  port="4848" protocol="admin-listener" transport="tcp" name="admin-listener" thread-pool="admin-thread-pool"></network-listener>
+          <network-listener address="OPENSHIFT_DIY_IP"  port="24848" protocol="admin-listener" transport="tcp" name="admin-listener" thread-pool="admin-thread-pool"></network-listener>
         </network-listeners>
 
         <transports>
@@ -449,7 +449,8 @@
              <network-listeners>
                  <network-listener address="OPENSHIFT_DIY_IP" port="9999" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool" />
                  <!--<network-listener address="0.0.0.0" port="${HTTP_SSL_LISTENER_PORT}" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool" />
-                 <network-listener port="${ASADMIN_LISTENER_PORT}" protocol="pu-protocol" transport="tcp" name="admin-listener" thread-pool="http-thread-pool" />-->
+                 -->
+                 <network-listener port="${ASADMIN_LISTENER_PORT}" protocol="pu-protocol" transport="tcp" name="admin-listener" thread-pool="http-thread-pool" />
              </network-listeners>
              <transports>
                  <transport name="tcp" />
