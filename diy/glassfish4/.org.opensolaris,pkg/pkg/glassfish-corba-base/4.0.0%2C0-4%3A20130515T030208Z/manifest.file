@@ -1,0 +1,8 @@
+file 8843a3035c068dd5f99cd3e8d5fdcea6eb3fa119 chash=0369aba7053062e8ec5f1efe7bffd53231634cec group=sys mode=0664 owner=root path=glassfish/modules/pfl-tf.jar pkg.csize=81245 pkg.size=91938
+file 3fd943443067fece9632fc27cc9cbe8508143780 chash=9baac82e12a1b7e9641f6d409aca7cdb90806e95 group=sys mode=0664 owner=root path=glassfish/modules/pfl-basic.jar pkg.csize=154408 pkg.size=181741
+file 09ab866b9fb69a57737715dfc7a886ba578ebc2d chash=a0aa9b68ad0dcf47da98477e547df70c18fb7913 group=sys mode=0664 owner=root path=glassfish/modules/pfl-basic-tools.jar pkg.csize=61097 pkg.size=70023
+file 0193b8dc4b5e08046d3d696a7318d20a86456e03 chash=5493b71324b6e6aa5e5b905739603039015fd437 group=sys mode=0664 owner=root path=glassfish/modules/pfl-asm.jar pkg.csize=319666 pkg.size=347201
+file 06d1b1e6d2e3caf1e74faf4f6ae6a0144a2cf5cf chash=838c8cb200b3bddb87802544f60296bfc53b3143 group=sys mode=0664 owner=root path=glassfish/modules/pfl-dynamic.jar pkg.csize=293004 pkg.size=338063
+file f9b3701949e1787d0f3ed3050b045dea7ce7a715 chash=3fd0661aedd81758ddaf7f65c89d4eb712cb275d group=sys mode=0664 owner=root path=glassfish/modules/glassfish-corba-omgapi.jar pkg.csize=685390 pkg.size=799768
+file a2930f968509f2ddb0747598f65a4cfceab1a25c chash=9a7460ef12798fb5ff0bf1035b05fd5b60e93097 group=sys mode=0664 owner=root path=glassfish/modules/pfl-tf-tools.jar pkg.csize=42909 pkg.size=48334
+file 4a21bdf5322ba837367a474ae6acfc5997f178f5 chash=3a12b7864dd35035c9db22cb9117c197e33c4c93 group=sys mode=0664 owner=root path=glassfish/modules/glassfish-corba-internal-api.jar pkg.csize=22437 pkg.size=27860

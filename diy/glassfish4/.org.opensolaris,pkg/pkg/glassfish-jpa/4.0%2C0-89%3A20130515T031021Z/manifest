@@ -1,0 +1,22 @@
+set name=fmri value=pkg:/glassfish-jpa@4.0,0-89:20130515T031021Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish Java EE ORM technology. This provides implementation for Java Persistence API (JPA). For more information on JPA, please refer to http://java.sun.com/javaee/technologies/persistence.jsp.  GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish JPA"
+depend fmri=pkg:/glassfish-jca type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0775 owner=root path=glassfish
+dir group=sys mode=0775 owner=root path=glassfish/modules
+file 6c92dfb0a94541f9949c0ca256043edfa3110474 chash=5d2eba2e3cd3704f1380c1adbb75e05158f120f3 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.dbws.jar pkg.csize=250090 pkg.size=279738
+file 1d3a637adbf5340ff624851c546b5066924deeaa chash=f860a00ed1fa99d58d97f59d0a4f561d651d3e58 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.core.jar pkg.csize=4601455 pkg.size=4977121
+file 24e44cbb82855555cb71899f3056f493c9881489 chash=8bbfb96fb462ce97b5a45c6059ecd579a712b98a group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.moxy.jar pkg.csize=456335 pkg.size=488045
+file 9d40a7c98d60fc9f3772d29fc6e19f736a769ae6 chash=d2c2fb2533f226311329a6d3ee4bbf11b97e9bd7 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.antlr.jar pkg.csize=164481 pkg.size=189645
+file b1d9bfcbc513472e819cb6c7e1018d26439d400a chash=5dcab45bbd2c94c522e022dffe579c2cc1ac5030 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.jpa.jpql.jar pkg.csize=1210871 pkg.size=1396640
+file 908a078b502f84cb8107ea980e248a42d191cdab chash=eda95ad1f7470cfa9c28f65e7f9d1a8c3a4df7fc group=sys mode=0664 owner=root path=glassfish/modules/jpa-container.jar pkg.csize=39010 pkg.size=43773
+file 33af4c7f0febc7049f0e872a1eb4dbb7126be6f5 chash=edd637272a104b1dd1874b8a546d03e0dd7dc2e7 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.oracle.jar pkg.csize=78391 pkg.size=87759
+file de6b65fef5c3beca35586456cb9ed7d090a7536d chash=0d3bc967c199f5088ef452d01ba0d18d6f014bd7 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.asm.jar pkg.csize=236687 pkg.size=271208
+file 1fb50a566d8fa5e44cb73d46cbc68fcaf3959395 chash=fc52f752863ec8c8feef659345f992b7e3e6f4e7 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.jpa.jar pkg.csize=1056845 pkg.size=1140727
+file 21532c7534feee0c021a33719e6b7f9c996304ae chash=b5c92d353f2c42c8ea290c611c9b6794a397d17e group=sys mode=0664 owner=root path=glassfish/modules/persistence-common.jar pkg.csize=23810 pkg.size=26541
+file 578e2b20361d5a2b3da7b32658773ae430ad9c4f chash=b281fb6150c73858040253336c8ba4a7c716051a group=sys mode=0664 owner=root path=glassfish/modules/glassfish-oracle-jdbc-driver-packages.jar pkg.csize=2638 pkg.size=3518
+file d9e2a6c6a54de3ff2768895f92c70491199c31b8 chash=a07128af94bc3edc4f30f72ce42fa2b955023c5e group=sys mode=0664 owner=root path=glassfish/modules/gf-jpa-connector.jar pkg.csize=7135 pkg.size=8747
+file ab9303876e2078cb2b3f6d6f831be977e8b90f42 chash=9eb450e0c2f9e980cafa7607d637c7f9e113f415 group=sys mode=0664 owner=root path=glassfish/modules/org.eclipse.persistence.jpa.modelgen.processor.jar pkg.csize=47129 pkg.size=50677
+set name=publisher value=release.glassfish.org

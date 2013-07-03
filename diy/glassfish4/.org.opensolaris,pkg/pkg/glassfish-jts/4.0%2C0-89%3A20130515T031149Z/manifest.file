@@ -1,0 +1,2 @@
+file 7792f6c3c9559f3b493477c095f30d0d839158fa chash=f9b1661329fd77ea8ec332c0d1604256319221b1 group=sys mode=0664 owner=root path=glassfish/modules/jts.jar pkg.csize=359027 pkg.size=382080
+file 32b7b50725b679b1d3a3fd6dbf5d5ad3073598d6 chash=e004a3fab4631ee2b5656eca2f8f17a9f29d27d6 group=sys mode=0664 owner=root path=glassfish/modules/console-jts-plugin.jar pkg.csize=24917 pkg.size=28881

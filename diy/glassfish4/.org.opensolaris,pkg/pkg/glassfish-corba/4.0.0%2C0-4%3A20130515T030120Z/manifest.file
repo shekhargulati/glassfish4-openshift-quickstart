@@ -1,0 +1,2 @@
+file d80acb66b596b888263257cf08e7ff6dae85529c chash=333af567b76a463e8586a05c4e83d0b5f2203eb9 group=sys mode=0664 owner=root path=glassfish/modules/glassfish-corba-orb.jar pkg.csize=1406188 pkg.size=1559081
+file 93dc15a597050a2b629600c6790c62f06bed1b4a chash=3693f67eab5e773a4d5645bf2504d5e34ebba943 group=sys mode=0664 owner=root path=glassfish/modules/glassfish-corba-csiv2-idl.jar pkg.csize=94683 pkg.size=117480

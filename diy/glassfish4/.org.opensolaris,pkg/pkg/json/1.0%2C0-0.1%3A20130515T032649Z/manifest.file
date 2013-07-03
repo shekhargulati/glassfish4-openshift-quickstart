@@ -1,0 +1,2 @@
+file b30a277343ee9405f15b7dc0cb5f86a76e1b6610 chash=c56bac0f9228533a8c08752da176b5f1dcb44114 group=sys mode=0664 owner=root path=glassfish/modules/javax.json.jar pkg.csize=67864 pkg.size=76402
+file f159f8bd2ec58ed7a7ddc9c997b36880001a21e9 chash=cb23c22efe88eb0bdd11fbc03c40229b1d63cf4b group=sys mode=0664 owner=root path=glassfish/modules/jsonp-jaxrs.jar pkg.csize=6253 pkg.size=7507

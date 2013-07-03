@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="ascii"?>
+<history><client name="pkg" version="1.122.2-56.2852"><args><arg><![CDATA[/export/home/java_re/BUILD_AREA/workspace/gf-4.0-branch-build-weekly/pkg-toolkit-sunos-sparc/pkg/bin/client.py]]></arg><arg><![CDATA[install]]></arg><arg><![CDATA[glassfish-corba]]></arg></args></client><operation end_time="20130515T050903Z" name="refresh-publishers" result="Succeeded" start_time="20130515T050903Z" userid="143" username="java_re"/></history>

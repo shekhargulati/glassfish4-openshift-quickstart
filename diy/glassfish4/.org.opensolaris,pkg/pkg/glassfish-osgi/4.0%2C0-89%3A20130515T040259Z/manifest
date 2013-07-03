@@ -1,0 +1,31 @@
+set name=fmri value=pkg:/glassfish-osgi@4.0,0-89:20130515T040259Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish OSGi description placeholder. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish OSGi Support"
+depend fmri=pkg:/glassfish-nucleus type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0775 owner=root path=glassfish
+dir group=sys mode=0775 owner=root path=glassfish/modules
+dir group=sys mode=0775 owner=root path=glassfish/lib
+file dc4d8e7d329a2e0a603357a776395dfb0763c52c chash=ef81113808ebabf05561fec8ad427147e8f1acbc group=sys mode=0664 owner=root path=glassfish/modules/osgi-container.jar pkg.csize=19972 pkg.size=23424
+file e7cf7ab43a6ecc4b50ceab22bb62a57e70b0067e chash=fe8f83da52fe7697c1cff5ca43d0fe460d14aff7 group=sys mode=0664 owner=root path=glassfish/modules/osgi-jpa-extension.jar pkg.csize=7450 pkg.size=9336
+file 526eac0cd55fa0b1bb0118d98120a118f1968992 chash=2786ae0d5884c415a2619ff09f860314e79623d4 group=sys mode=0664 owner=root path=glassfish/modules/osgi-cli-remote.jar pkg.csize=13211 pkg.size=15418
+dir group=sys mode=0775 owner=root path=glassfish/modules/autostart
+file c55b8cb55015948a2a1850589e65871797c30104 chash=ea894b8d33e18b845a84f11c91f880cf9e8a89c9 group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-cdi.jar pkg.csize=18042 pkg.size=21026
+file df4813f4dc90aa02171838be218d2d94a7d03509 chash=eedefcaf9dbc313ddba13406b7bc1cafa79946ed group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.fileinstall.jar pkg.csize=64240 pkg.size=70638
+file fd318ce0803b76ce86a63b756b0133ad18aacfca chash=e57e212d2b9ad7a0195a5a80a4adfed81ebb2646 group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.eventadmin.jar pkg.csize=169047 pkg.size=200859
+file 7956a9a90820af191b02c182531374ca2fc05c53 chash=97ecc719493cfa2481ae9f7a2fa42b43a7304e21 group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-ee-resources.jar pkg.csize=24772 pkg.size=28084
+file 5a752e56524f0215687dbbde4fd234df48669dc8 chash=eae03f66de47b54c410e841cacfd78776b0de396 group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-jdbc.jar pkg.csize=27821 pkg.size=30902
+file f91da1bc11710f2411b0caa7b32f0d05764ad6d5 chash=8d3b09c63cc789f66ecc7f243ed5b62e23674e9b group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-javaee-base.jar pkg.csize=73385 pkg.size=81917
+file f0be0cdca15cf1dce4efe43538d12670cd3fb45e chash=fce968f798be3b150dcaf6061dcee92e8511bd8a group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-web-container.jar pkg.csize=58680 pkg.size=64433
+file 8cd9ebce3e639bbec3eb25e622c44125137fc8ad chash=19567a6c4774f1f4148938724817c9942e203e52 group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.configadmin.jar pkg.csize=74943 pkg.size=82740
+file b5c822216adf7f5319d549639cff63d199cb2c30 chash=9ba11036739b427a0de20be872c11eb0cfcfd37f group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.gogo.runtime.jar pkg.csize=58407 pkg.size=64932
+file b1eb9d22a6f0e482c8337194a8c03d4d2d2b8b11 chash=29e6326d7355084d01430b30003ef28b92272292 group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.gogo.shell.jar pkg.csize=44914 pkg.size=47741
+file 989af67e11336a0aadafda372ace6fd87b5e584e chash=b56bdd2a3222b7cf53050d50a0f9930197c42330 group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-ejb-container.jar pkg.csize=20664 pkg.size=23830
+file 8e4e6c43ab04abb04192627d83b76b8562f60c33 chash=27803d43a52019ea93984e0664a458efd60d253c group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-jpa.jar pkg.csize=27505 pkg.size=31159
+file bcf71104aea251da9ef20d019789af3e2f3807fd chash=788da67f81f77f15e5fa1885f8e65fef49d1c5fb group=sys mode=0664 owner=root path=glassfish/modules/autostart/osgi-jta.jar pkg.csize=6228 pkg.size=7640
+file 0bc375dd89d29ba785658244766a502c94114847 chash=4216cb22a8c911cdc6d30002c09f17857958491a group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.scr.jar pkg.csize=166630 pkg.size=181501
+file 4130220230c527d110c83d8ef045c2c0fe68e438 chash=562104c4af02caa40ef7c5394052540d1127c58e group=sys mode=0664 owner=root path=glassfish/modules/autostart/org.apache.felix.gogo.command.jar pkg.csize=41422 pkg.size=44387
+dir group=sys mode=0775 owner=root path=glassfish/lib/asadmin
+file ad67b7ed75cf31d3a9a27e8dbdf0bb7505f78d33 chash=62aaf54d043894d7a8aea7dcbd48322b8e565eac group=sys mode=0664 owner=root path=glassfish/lib/asadmin/osgi-cli-interactive.jar pkg.csize=201830 pkg.size=216667
+set name=publisher value=release.glassfish.org

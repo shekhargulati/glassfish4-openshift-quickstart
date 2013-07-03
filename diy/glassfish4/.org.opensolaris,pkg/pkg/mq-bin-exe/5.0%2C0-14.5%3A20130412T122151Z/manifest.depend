@@ -1,0 +1,1 @@
+depend fmri=pkg:/mq-core@5.0 type=require

@@ -1,0 +1,27 @@
+set name=fmri value=pkg:/glassfish-appclient@4.0,0-89:20130515T033052Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="Java EE Application Client Container. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish Appclient"
+depend fmri=pkg:/glassfish-common type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0775 owner=root path=glassfish
+dir group=sys mode=0775 owner=root path=glassfish/config
+dir group=sys mode=0775 owner=root path=glassfish/bin
+dir group=sys mode=0775 owner=root path=glassfish/modules
+dir group=sys mode=0775 owner=root path=glassfish/lib
+file 94c7bc4e829e29c3426a4bea8eed3f5ed32b2ef9 chash=a7f185ee8bb4627ee22605c1c13cc7eecfcb3204 group=sys mode=0664 owner=root path=glassfish/config/client-jnlp-config.properties pkg.csize=1556 pkg.size=3729
+file 76b1504972409cf4433bfb0c1db9382ec22a9d4a chash=843dbcdce7abd09e5e509ef466cf7560b11dde35 group=sys mode=0664 owner=root path=glassfish/bin/appclient.js pkg.csize=3839 pkg.size=12910
+file ce246dfaddb76e0c334faee4837d954ef148cc7e chash=a7e1eef4d561b6bfba711a66ce134fae149935bc group=sys mode=0664 owner=root path=glassfish/bin/package-appclient pkg.csize=1215 pkg.size=2425
+file 6b8835facf0c5126a26e117430b2812cfbc0b625 chash=92a79ffd8cb726a462a328145b2c9c2dc1cffc85 group=sys mode=0664 owner=root path=glassfish/bin/appclient pkg.csize=1661 pkg.size=3620
+file 7d827accbc963944dc232799fadc860ed998c997 chash=f5f33ca9e4257c27d2a43e7a041e506a66b99152 group=sys mode=0664 owner=root path=glassfish/bin/package-appclient.bat pkg.csize=1183 pkg.size=2511
+file b34b2b4d133f6ae353e2e92b88d24799ce029c4b chash=5a4800cb28b5466139d4653cf81e519d4bf27629 group=sys mode=0664 owner=root path=glassfish/bin/appclient.bat pkg.csize=1781 pkg.size=4079
+file cbf930e6f3e310add569f1cd392d1a10e9bc0e8f chash=3284d555314542a551916b1ed6f47985ef33258f group=sys mode=0664 owner=root path=glassfish/modules/appclient.security.jar pkg.csize=15621 pkg.size=18201
+file e3db94f1aaf4b7a1ffe60a5221f78a390c5a8dcc chash=35f6c23e7c8d4b6366e4568208d4f1eec2925ce5 group=sys mode=0664 owner=root path=glassfish/modules/appclient-connector.jar pkg.csize=6863 pkg.size=8805
+file a1c2892a76bb07d5ea531592ea8743b9d3e41d17 chash=dec09e05ee992f4720f081e1961bc5e81beef283 group=sys mode=0664 owner=root path=glassfish/modules/gf-client-module.jar pkg.csize=1629225 pkg.size=1712128
+file b9477927e9fe4692c7072af33a9d6a0808709072 chash=7c3005294f91018f304feb02cb087da5aa3ab0dc group=sys mode=0664 owner=root path=glassfish/modules/acc-config.jar pkg.csize=22879 pkg.size=28753
+file 359ecb048949682b7db580eeacaf18fbcf097181 chash=115233d3d1607b9e200c478e9e6c947b618957f2 group=sys mode=0664 owner=root path=glassfish/modules/appclient-server-core.jar pkg.csize=171880 pkg.size=189824
+file 2cb335aefc7e94b52e6b07b8ffe4370139988b7e chash=92705671963577035018f1b4ff0d7f1f22c5d3e9 group=sys mode=0664 owner=root path=glassfish/lib/gf-client.jar pkg.csize=19897 pkg.size=22488
+dir group=sys mode=0775 owner=root path=glassfish/lib/appclient
+file 596c0bb962123d03eff898060e317f7548c6cbad chash=8fd5dc44566a8a00039e6bfd263946ceb7377b9b group=sys mode=0664 owner=root path=glassfish/lib/appclient/weld-se-core.jar pkg.csize=28195 pkg.size=33926
+dir group=sys mode=0755 owner=root path=bin
+set name=publisher value=release.glassfish.org

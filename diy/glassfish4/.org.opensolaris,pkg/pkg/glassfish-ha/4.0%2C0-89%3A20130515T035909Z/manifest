@@ -1,0 +1,11 @@
+set name=fmri value=pkg:/glassfish-ha@4.0,0-89:20130515T035909Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="High availability support for GlassFish. GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish High Availability"
+depend fmri=pkg:/glassfish-cluster type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0775 owner=root path=glassfish
+dir group=sys mode=0775 owner=root path=glassfish/modules
+file 93164ca8c09cc0fed4731fae5915ffaef7becdb4 chash=6904786506fdf1ae3a2935130ca864b6f3c35df4 group=sys mode=0664 owner=root path=glassfish/modules/ha-shoal-cache-bootstrap.jar pkg.csize=6686 pkg.size=8653
+file 08eb4f9c624d2ab37ffb59c73782bda3982827bd chash=1c5f71f3a18c0b1e18cba44f24687dc496b287c7 group=sys mode=0664 owner=root path=glassfish/modules/ha-shoal-cache-store.jar pkg.csize=5957 pkg.size=7556
+set name=publisher value=release.glassfish.org

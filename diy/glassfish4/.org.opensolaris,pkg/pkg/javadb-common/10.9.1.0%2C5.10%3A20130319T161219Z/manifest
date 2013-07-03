@@ -1,0 +1,13 @@
+set name=fmri value=pkg:/javadb-common@10.9.1.0,5.10:20130319T161219Z
+set name=pkg.summary value="Java DB Common Files"
+set name=pkg.description value="Java DB is Sun's supported distribution of the open source Apache Derby 100% Java technology database. It is fully transactional, secure, easy-to-use, standards-based (SQL, JDBC API, and Java EE) yet small, only 2MB. The Apache Derby project has a strong and growing community that includes developers from large companies such as Sun Microsystems and IBM as well as individual contributors."
+set name=info.classification value="Databases and Tools"
+license 2b8b815229aa8a61e483fb4ba0588b8b6c491890 chash=06741e61703647014fca12c4e203a0f3b6c06bf9 license="Apache License Version 2.0" pkg.csize=3968 pkg.size=11358
+dir group=sys mode=0755 owner=root path=javadb
+dir group=sys mode=0755 owner=root path=javadb/lib
+file 47b573e3824cd5e02a1a3ae99e2735b49e0256e4 chash=7e61862a5f57daa3aaaa110c33eb83a5d2a4c791 group=sys mode=0644 owner=root path=javadb/3RDPARTY pkg.csize=3982 pkg.size=11560
+file 94b0e3d9a0b7a2e12754bdb07acb314c8bf21352 chash=f802c60ae9a39f37612c4f2c05b07826cb7d2cf9 group=sys mode=0644 owner=root path=javadb/index.html pkg.csize=2009 pkg.size=5167
+file 47b573e3824cd5e02a1a3ae99e2735b49e0256e4 chash=7e61862a5f57daa3aaaa110c33eb83a5d2a4c791 group=sys mode=0644 owner=root path=javadb/LICENSE pkg.csize=3982 pkg.size=11560
+file 8b197722f5b9d5a42e03e2bdac0014235173b530 chash=d177b88e94224826797d6a375c34895a9b5cf5cc group=sys mode=0644 owner=root path=javadb/NOTICE pkg.csize=1845 pkg.size=7323
+file bfc22936e6a615febbee9d54ac083dd48e633a3c chash=56969880faeed42e50700a44956482229c96a14c group=sys mode=0644 owner=root path=javadb/RELEASE-NOTES.html pkg.csize=20309 pkg.size=86145
+set name=publisher value=release.glassfish.org

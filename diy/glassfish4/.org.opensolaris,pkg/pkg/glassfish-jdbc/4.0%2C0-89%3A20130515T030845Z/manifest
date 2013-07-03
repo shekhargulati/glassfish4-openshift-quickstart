@@ -1,0 +1,58 @@
+set name=fmri value=pkg:/glassfish-jdbc@4.0,0-89:20130515T030845Z
+set name=info.classification value="Application Servers"
+set name=pkg.description value="GlassFish JDBC package provides support for applications that use Java Database Connectivity (JDBC) API for database access. This module supports datasources of type javax.sql.DataSource, javax.sql.ConnectionPoolDataSource, javax.sql.XADataSource and works with JDBC (includes JDBC 4.0) compliant drivers. For more information on JDBC, refer to http://java.sun.com/products/jdbc/overview.html.  GlassFish Server is a modular and lightweight Java EE 7 compliant application server. Key features include an OSGi runtime, fast startup time, maven support, and rapid iterative development with Active Redeploy.  GlassFish Server also offers feature-rich administration with the web console, command line, and RESTful API."
+set name=pkg.summary value="GlassFish JDBC"
+depend fmri=pkg:/glassfish-common type=require
+license 8741fa556feea4ca58ec28abc47de0bf9d5b39a3 chash=28b7cfba8f297b99296afc231955dc90e8d76d47 license="CDDL and GPL v2 with classpath exception" pkg.csize=12394 pkg.size=38052
+dir group=sys mode=0775 owner=root path=glassfish
+dir group=sys mode=0775 owner=root path=glassfish/modules
+dir group=sys mode=0775 owner=root path=glassfish/lib
+file da994d554133cc96b0b3c7d26a35c2019b5e04fd chash=483d556b8a0bc254a1f3c9b3cd17c8826f7996d8 group=sys mode=0664 owner=root path=glassfish/modules/jdbc-runtime.jar pkg.csize=74955 pkg.size=80357
+file 1a6d6e6fba9f76b34e58d8e967b8bb30303412ec chash=9d8f22860dfd5ba35d62dbf75180a6e253e26cc7 group=sys mode=0664 owner=root path=glassfish/modules/jdbc-admin.jar pkg.csize=55789 pkg.size=60426
+dir group=sys mode=0775 owner=root path=glassfish/lib/install
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/templates
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/databases
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__cp_jdbc_ra
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__dm_jdbc_ra
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__ds_jdbc_ra
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__xa_jdbc_ra
+file 12ac9ba579f3436cd68b53850a4238aa88695f6a chash=5891959848ed103eb724166862b97817818f38ca group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__cp_jdbc_ra/__cp_jdbc_ra.jar pkg.csize=150406 pkg.size=159883
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__cp_jdbc_ra/META-INF
+file d81cc5a33b20628dd5881569a4cbc88bd34c80ba chash=45cb3bf5e8f1e25670be5e20f1d0b8eb665542dc group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__cp_jdbc_ra/META-INF/MANIFEST.MF pkg.csize=274 pkg.size=510
+file c9a397641a9385edf7e4f84b638863f19ded6db8 chash=3854052115c8fde8c8d2de3ba00ee55d80113275 group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__dm_jdbc_ra/__dm_jdbc_ra.jar pkg.csize=151612 pkg.size=161171
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__dm_jdbc_ra/META-INF
+file d81cc5a33b20628dd5881569a4cbc88bd34c80ba chash=45cb3bf5e8f1e25670be5e20f1d0b8eb665542dc group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__dm_jdbc_ra/META-INF/MANIFEST.MF pkg.csize=274 pkg.size=510
+file 1bd35f06b398099477db44fdee3cac6a352ccbe1 chash=45e3a6a4c1055a909d0fe9bdbf5d968cdf68ddbc group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__ds_jdbc_ra/__ds_jdbc_ra.jar pkg.csize=150055 pkg.size=159510
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__ds_jdbc_ra/META-INF
+file d81cc5a33b20628dd5881569a4cbc88bd34c80ba chash=45cb3bf5e8f1e25670be5e20f1d0b8eb665542dc group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__ds_jdbc_ra/META-INF/MANIFEST.MF pkg.csize=274 pkg.size=510
+file b24304918454e89c1c0e5eff4ccf3f35a9530d71 chash=0a59258bdaca0530ed065fad9def48ac1176f3bd group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__xa_jdbc_ra/__xa_jdbc_ra.jar pkg.csize=150469 pkg.size=159939
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/applications/__xa_jdbc_ra/META-INF
+file d81cc5a33b20628dd5881569a4cbc88bd34c80ba chash=45cb3bf5e8f1e25670be5e20f1d0b8eb665542dc group=sys mode=0664 owner=root path=glassfish/lib/install/applications/__xa_jdbc_ra/META-INF/MANIFEST.MF pkg.csize=274 pkg.size=510
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/templates/resources
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/templates/resources/jdbc
+file 52af32e9038502c76bc29a1346228ae565a115b4 chash=4594561981087b1acd2b62e8f809fbc69e4a40c9 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/db2_dd_datasource.xml pkg.csize=1627 pkg.size=3455
+file 9e67122733fbc1ee42b41ee912e6c33bcd0c253f chash=1dd7340a4911f4d6a751007252ca9cc7d08b5879 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/microsoft_dd_datasource.xml pkg.csize=1649 pkg.size=3522
+file 67a9a688dd3dbea91c56aa4f2df5d34e4379b81b chash=68755005a8652a2de3adbbb8f659c6cd605c9570 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/oracle_inet_datasource.xml pkg.csize=1674 pkg.size=3877
+file 047b9a70608a0ddc16b0122af00111b31a6b28ca chash=5daebdce79eb2160d5fb313c7f3f586c8fa8ea29 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/microsoft_sqlserver2005_datasource.xml pkg.csize=1651 pkg.size=4143
+file 6da430caad0795b4d73aa9a2d51282a14beeab61 chash=3f5e5164ac67695b4041ff677f5887ceb0aaad56 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/mysql_type4_datasource.xml pkg.csize=1662 pkg.size=4036
+file 100746e71fb8dab258b63cb9eb763eccce30b4d6 chash=faee0e43f05c80aa09de021a580f8c45228434b1 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/microsoft_jtds_datasource.xml pkg.csize=1580 pkg.size=3344
+file 5ea4f09674381ca37c9174357e7f318f8b827c83 chash=b1beb02d201b1526bf549fba7879ab3e8248cd50 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/microsoft_sqlserver2000_datasource.xml pkg.csize=1600 pkg.size=3465
+file 9d47d941cbcb5a8907cc8651f75cf18a1c2e6de5 chash=2cd8d55fc2788b2c5e4389011fc6d60855c259f2 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/README pkg.csize=782 pkg.size=1654
+file 26bcd50d73b15ddeee275047f84ee3d6eba178c8 chash=8ec599c7476dd4f1a003075be32cbc922fe010dc group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/sybase_dd_datasource.xml pkg.csize=1592 pkg.size=3399
+file 5600858e21b25cbaeac79467b144e3c270ce7196 chash=940bbb33d474223c10a1b7c73118dc7421c7b70f group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/sybase_inet_datasource.xml pkg.csize=1598 pkg.size=3759
+file be795ebef8456459853cc0fe2e7c96a27eeb3374 chash=308e7f3e5df086602deab86750d009ca78e22c70 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/javadb_type4_datasource.xml pkg.csize=1875 pkg.size=6716
+file 8ca3d3f389d22a622f23c9ad61ad94657af5ce59 chash=fe910b41183b04088cd032022fca4905b278bfdd group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/oracle_type4_datasource.xml pkg.csize=1654 pkg.size=3930
+file 4e158f39b857d6d7c0b10c6e28af87ad6aa881db chash=1b4b00e67caa5e3aec2fed705ab19db6011db673 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/oracle_dd_datasource.xml pkg.csize=1602 pkg.size=3382
+file 8e37915ea973c467fd8b10517c1ce6e2f9d58f3d chash=c090c80c043e790386c34f32e91219f2647f4fcf group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/postgresql_type4_datasource.xml pkg.csize=1676 pkg.size=3986
+file 55025c3bf18127cae5e2bd099a00e0fb6b82dc6f chash=b9dd5ebcabcaca79a5fe613f7beca087435c3626 group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/db2_jcc_datasource.xml pkg.csize=1663 pkg.size=4141
+file 608380d95ad9ebe64e1d6220de147cfa1abe6111 chash=1dcc99e6cb4f43b612a6cb05460fdd38afe0689f group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/sybase_jconn_datasource.xml pkg.csize=1596 pkg.size=3893
+file 763230019bc21e4b7e7b6e87eea334732cf4eace chash=8cca183f0df4704860399cced8200fd590f8116f group=sys mode=0664 owner=root path=glassfish/lib/install/templates/resources/jdbc/microsoft_inet_datasource.xml pkg.csize=1592 pkg.size=3837
+dir group=sys mode=0775 owner=root path=glassfish/lib/install/databases/dbvendormapping
+file 403c77eff1871637b57867c497a656d695d61e9a chash=6c7a0ba88eee32e2cce69e799f086006943b8d24 group=sys mode=0664 owner=root path=glassfish/lib/install/databases/dbvendormapping/cpds.properties pkg.csize=1321 pkg.size=3167
+file ce922aa9ae9bd98c7803bd7b878bc33f33f56f43 chash=37b8aa5fdfa501d855b972790c3466acd616a732 group=sys mode=0664 owner=root path=glassfish/lib/install/databases/dbvendormapping/driver.properties pkg.csize=1284 pkg.size=2881
+file eded0d50d142b4e948d1e69f9fd7c7082aa2551b chash=2d1ad83de20853b2742b91f9e14cb6064508e55f group=sys mode=0664 owner=root path=glassfish/lib/install/databases/dbvendormapping/dbvendor.properties pkg.csize=1255 pkg.size=2542
+file 858657a82d8f7cbdf3bfbe2bf653be261f5e2f9a chash=ae27aab9b7f66974c25c3535999f8d53a804057f group=sys mode=0664 owner=root path=glassfish/lib/install/databases/dbvendormapping/validationclassnames.properties pkg.csize=1150 pkg.size=3183
+file 7880aff3028da479e5c2c14f32b53d2e111b993e chash=ebed92c855db96ff552ba0a7fd20eeb13af409ee group=sys mode=0664 owner=root path=glassfish/lib/install/databases/dbvendormapping/xads.properties pkg.csize=1322 pkg.size=3000
+file 87829aa78a59b841406a7bab7bd5ab6e767a3490 chash=52f0b91db03f6d51b4f0667a0c8e0b476b8d4b12 group=sys mode=0664 owner=root path=glassfish/lib/install/databases/dbvendormapping/ds.properties pkg.csize=1336 pkg.size=3037
+set name=publisher value=release.glassfish.org

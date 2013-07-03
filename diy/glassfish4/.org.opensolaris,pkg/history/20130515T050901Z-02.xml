@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ascii"?>
+<history><client name="pkg" version="1.122.2-56.2852"><args><arg><![CDATA[/export/home/java_re/BUILD_AREA/workspace/gf-4.0-branch-build-weekly/pkg-toolkit-sunos-sparc/pkg/bin/client.py]]></arg><arg><![CDATA[install]]></arg><arg><![CDATA[glassfish-ejb]]></arg></args></client><operation end_time="20130515T050902Z" name="install" result="Succeeded" start_time="20130515T050901Z" userid="143" username="java_re"><start_state><![CDATA[UNEVALUATED:
++pkg:/glassfish-ejb@4.0,0-89:20130515T030357Z
+]]></start_state><end_state><![CDATA[None -> pkg:/glassfish-ejb@4.0,0-89:20130515T030357Z
+None -> pkg:/glassfish-corba@4.0.0,0-4:20130515T030120Z
+]]></end_state></operation></history>
