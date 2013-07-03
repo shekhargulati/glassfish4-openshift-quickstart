@@ -2,14 +2,14 @@
 
 GlassFish 4 is reference implementation of Java EE 7. Below are the steps required to run GlassFish4 on OpenShift. The sample running GlassFish 4 on OpenShift is available at http://glassfish4-t20.rhcloud.com/ and http://glassfish4-t20.rhcloud.com/hello
 
-1. First create OpenShift diy application.
+1. First create OpenShift diy application with name glassfish4
 ```
-rhc app create glassfish diy
+rhc app create glassfish4 diy
 ```
 
 2. Add git remote to GlassFish4 OpenShift quickstart and pull code from it.
 ```
-cd glassfish
+cd glassfish4
 git remote add upstream https://github.com/shekhargulati/glassfish4-openshift-quickstart.git
 git pull -s recursive -X theirs upstream master
 ```
