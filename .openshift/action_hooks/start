@@ -2,4 +2,7 @@
 # The logic to start up your application should be put in this
 # script. The application will work only if it binds to
 # $OPENSHIFT_INTERNAL_IP:8080
-nohup $OPENSHIFT_REPO_DIR/diy/testrubyserver.rb $OPENSHIFT_DIY_IP $OPENSHIFT_REPO_DIR/diy > $OPENSHIFT_DIY_DIR/logs/server.log 2>&1 &
+set -x
+export JAVA_HOME=/var/lib/openshift/51d3abf8e0b8cdc3d200002c/app-root/data/jdk1.7.0_25
+export PATH=/var/lib/openshift/51d3abf8e0b8cdc3d200002c/app-root/data/jdk1.7.0_25/bin/:$PATH
+java -version
