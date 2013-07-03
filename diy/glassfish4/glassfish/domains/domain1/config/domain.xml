@@ -74,7 +74,7 @@
       <property value="1527" name="PortNumber" />
       <property value="APP" name="Password" />
       <property value="APP" name="User" />
-      <property value="localhost" name="serverName" />
+      <property value="OPENSHIFT_DIY_IP" name="serverName" />
       <property value="sun-appserv-samples" name="DatabaseName" />
       <property value=";create=true" name="connectionAttributes" />
     </jdbc-connection-pool>
@@ -86,7 +86,7 @@
     </server>
   </servers>
   <nodes>
-    <node name="localhost-domain1" type="CONFIG" node-host="OPENSHIFT_INTERNAL_IP" install-dir="${com.sun.aas.productRoot}"/>
+    <node name="localhost-domain1" type="CONFIG" node-host="OPENSHIFT_DIY_IP" install-dir="${com.sun.aas.productRoot}"/>
   </nodes>
  <configs>
    <config name="server-config">
@@ -109,7 +109,7 @@
         </iiop-listener>
       </iiop-service>-->
       <admin-service auth-realm-name="admin-realm" type="das-and-server" system-jmx-connector-name="system">
-        <jmx-connector auth-realm-name="admin-realm" security-enabled="false" address="OPENSHIFT_INTERNAL_IP" port="7600" name="system" />
+        <jmx-connector auth-realm-name="admin-realm" security-enabled="false" address="OPENSHIFT_DIY_IP" port="7600" name="system" />
         <property value="/admin" name="adminConsoleContextRoot" />
         <property value="${com.sun.aas.installRoot}/lib/install/applications/admingui.war" name="adminConsoleDownloadLocation" />
         <property value="${com.sun.aas.installRoot}/.." name="ipsRoot" />
@@ -205,7 +205,7 @@
         <!-- How many concurrent users can connect to this remote shell -->
         <jvm-options>-Dosgi.shell.telnet.maxconn=1</jvm-options>
         <!-- From which hosts users can connect -->
-        <jvm-options>-Dosgi.shell.telnet.ip=OPENSHIFT_INTERNAL_IP</jvm-options>
+        <jvm-options>-Dosgi.shell.telnet.ip=OPENSHIFT_DIY_IP</jvm-options>
         <!-- Gogo shell configuration -->
         <jvm-options>-Dgosh.args=--nointeractive</jvm-options>
         <!-- Directory being watched by fileinstall. -->
@@ -247,7 +247,7 @@
           </protocol>
         </protocols>
         <network-listeners>
-          <network-listener address="OPENSHIFT_INTERNAL_IP" port="8080" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
+          <network-listener address="OPENSHIFT_DIY_IP" port="8080" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool"></network-listener>
           <!--<network-listener port="8181" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool"></network-listener>
           <network-listener port="4848" protocol="admin-listener" transport="tcp" name="admin-listener" thread-pool="admin-thread-pool"></network-listener>-->
         </network-listeners>
@@ -299,7 +299,7 @@
          </ejb-container>
          <mdb-container />
          <jms-service type="EMBEDDED" default-jms-host="default_JMS_host" addresslist-behavior="priority">
-             <jms-host name="default_JMS_host" host="OPENSHIFT_INTERNAL_IP" port="5445" admin-user-name="admin" admin-password="admin" lazy-init="true"/>
+             <jms-host name="default_JMS_host" host="OPENSHIFT_DIY_IP" port="5445" admin-user-name="admin" admin-password="admin" lazy-init="true"/>
          </jms-service>
          <log-service log-rotation-limit-in-bytes="2000000" file="${com.sun.aas.instanceRoot}/logs/server.log">
              <module-log-levels />
@@ -383,7 +383,7 @@
              <!-- How many concurrent users can connect to this remote shell -->
              <jvm-options>-Dosgi.shell.telnet.maxconn=1</jvm-options>
              <!-- From which hosts users can connect -->
-             <jvm-options>-Dosgi.shell.telnet.ip=OPENSHIFT_INTERNAL_IP</jvm-options>
+             <jvm-options>-Dosgi.shell.telnet.ip=OPENSHIFT_DIY_IP</jvm-options>
              <!-- Gogo shell configuration -->
              <jvm-options>-Dgosh.args=--noshutdown -c noop=true</jvm-options>
              <!-- Directory being watched by fileinstall. -->
@@ -445,7 +445,7 @@
 
              </protocols>
              <network-listeners>
-                 <network-listener address="OPENSHIFT_INTERNAL_IP" port="9999" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool" />
+                 <network-listener address="OPENSHIFT_DIY_IP" port="9999" protocol="http-listener-1" transport="tcp" name="http-listener-1" thread-pool="http-thread-pool" />
                  <!--<network-listener address="0.0.0.0" port="${HTTP_SSL_LISTENER_PORT}" protocol="http-listener-2" transport="tcp" name="http-listener-2" thread-pool="http-thread-pool" />
                  <network-listener port="${ASADMIN_LISTENER_PORT}" protocol="pu-protocol" transport="tcp" name="admin-listener" thread-pool="http-thread-pool" />-->
              </network-listeners>
