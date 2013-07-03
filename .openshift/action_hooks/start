@@ -6,6 +6,8 @@ set -x
 export JAVA_HOME=/var/lib/openshift/51d3abf8e0b8cdc3d200002c/app-root/data/jdk1.7.0_25
 export PATH=/var/lib/openshift/51d3abf8e0b8cdc3d200002c/app-root/data/jdk1.7.0_25/bin/:$PATH
 java -version
+cd $OPENSHIFT_REPO_DIR/diy/live-twitter-image-streaming
+mvn clean package
 cd $OPENSHIFT_REPO_DIR/diy/glassfish4/glassfish/domains/domain1/config/
 mv domain.xml domain.xml_2
 sed "s/$( grep serverName domain.xml_2 | cut -d\" -f 2 )/${OPENSHIFT_DIY_IP}/g" domain.xml_2 > domain.xml
